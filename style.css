@@ -1,0 +1,42 @@
+html{
+    background-color: gray;
+    color: whitesmoke;
+    box-shadow: 10vw 10vw 300px -8vw inset slategray;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+html body{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    font-family: monospace;
+}
+h1 team{
+    -webkit-text-stroke: 1px  red;
+}
+h1 score{
+    -webkit-text-stroke: 1px  black;
+}
+html body div{
+    opacity: 0;
+    padding: 5vw;
+    font-size: 5vw;
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20vh;
+    box-shadow: 10vw 10vw 300px -8vw inset #2b2b2b;
+}
+html body button{
+    border: 1px crimson dot-dash;
+    border-radius: 40px;
+    color: whitesmoke;
+    background-color: black;
+    padding: 3vw;
+    width: auto;
+    font-size: 20px;
+    box-shadow: 1px -1px 20px 2px blueviolet;
+    font-family: monospace;
+    margin-top: 20vh;
+}
