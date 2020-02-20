@@ -25,13 +25,13 @@ else {
 }
 let team1Limit = limit;
 let team2Limit = limit;
-
 function play() {
     if (team1Limit>0&&team2Limit>0) {
+        console.log(team2Limit+ " "+ team1Limit)
         if (team2Limit > team1Limit) {
-            shoot(2)
+            shoot(2, team2Limit)
         } else {
-            shoot(1)
+            shoot(1,team1Limit)
         }
     }
     else {
@@ -48,7 +48,7 @@ function play() {
         setTimeout(()=>{location.reload()},3000)
     }
 }
-function shoot(team) {
+function shoot(team, limit) {
     eval(`team${team}Limit --;`);
     if (Math.round(Math.random())===0){
         notification.style.opacity="100%";
@@ -73,11 +73,12 @@ function chekPreWin() {
         setTimeout(()=>{location.reload()},3000)
     }
     else {
-        if (team2Limit<team1Limit){
+        if (team2Limit>team1Limit){
             btn.innerText=stn.toUpperCase()
         }
         else {
             btn.innerText=ftn.toUpperCase()
         }
+
     }
 }
